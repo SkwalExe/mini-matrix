@@ -2,6 +2,21 @@
 Output random 0 and 1 or custom characters 
 # screenshot
 ![](/images/screenshot.png)
+# Installation
+## Arch
+```bash
+yay -S mini-matrix
+```
+## Debian based distros 
+clone github repo
+```bash
+git clone https://github.com/SkwalExe/mini-matrix
+```
+run make
+```bash
+cd mini-matrix
+make
+```
 # Usage 
 ```
 Usage: mini-matrix [OPTION]
