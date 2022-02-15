@@ -5,4 +5,4 @@ copy:
 	sudo chmod 755 /bin/mini-matrix
 
 uninstall:
-	sudo rm /bin/mini-matrix
+	sudo rm -f /bin/mini-matrix
