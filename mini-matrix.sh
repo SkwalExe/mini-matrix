@@ -2,11 +2,11 @@
 # Author : SkwalExe
 # Github : https://github.com/SkwalExe
 
-command="matrix"
+command="matrix" # the command to execute
 
 # settings
 loop="true"
-speed="0.5"
+speed="0.5" # delay between each lines
 n_chars=10 # number of characters in each line
 custom_chars="01"
 
@@ -26,12 +26,12 @@ while [ $# -gt 0 ]; do
         ;;
         
         -s|--speed)
-            if [ $# -gt 1 ]; then
-                if [ $(echo "$2" | grep -E "^[0-9]+$") ]; then
+            if [ $# -gt 1 ]; then # if one argument is specified after --speed 
+                if [ $(echo "$2" | grep -E "^[0-9]+$") ]; then # if the arg is a number
                     speed=$2
                     shift 2
                 elif
-                [ $(echo "$2" | grep -E "^[0-9]+\.[0-9]+$") ];
+                [ $(echo "$2" | grep -E "^[0-9]+\.[0-9]+$") ]; # if the arg is a float
                 then
                     speed=$2
                     shift 2
@@ -48,8 +48,8 @@ while [ $# -gt 0 ]; do
         
         -l|--loop)
             
-            if [ $# -gt 1 ]; then
-                if [ $(echo "$2" | grep -E "^(true|false)$") ]; then
+            if [ $# -gt 1 ]; then # if there is one argument after --loop
+                if [ $(echo "$2" | grep -E "^(true|false)$") ]; then # if the arg is true or false
                     loop=$2
                     shift 2
                 else
@@ -65,8 +65,8 @@ while [ $# -gt 0 ]; do
         
         -c|--chars)
             
-            if [ $# -gt 1 ]; then
-                if [ $(echo "$2" | grep -E "^[0-9]+$") ]; then
+            if [ $# -gt 1 ]; then # if there is one argument after --chars
+                if [ $(echo "$2" | grep -E "^[0-9]+$") ]; then # if the arg is a number
                     n_chars=$2
                     shift 2
                 else
@@ -83,7 +83,7 @@ while [ $# -gt 0 ]; do
         
         -a|--custom-chars)
             
-            if [ $# -gt 1 ]; then
+            if [ $# -gt 1 ]; then # if there is one argument after --custom-chars
                 custom_chars=$2
                 shift 2
                 
