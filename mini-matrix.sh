@@ -105,13 +105,15 @@ done
 
 function matrix() {
     
+    line=""
     
     for ((i=0; i<=n_chars; i++)); do
         # get random char out of custom chars
         char=$(echo "$custom_chars" | fold -w1 | shuf | head -n1)
-        echo -n $char
+        line="$line$char"
     done
     
+    printf "%s" "$line"
     
 }
 
@@ -146,7 +148,7 @@ case $command in
     ;;
     
     version)
-        echo "mini-matrix 1.0"
+        echo "mini-matrix 0.2.0"
     ;;
     
 esac
