@@ -1,6 +1,6 @@
-all: copy
+all: install
 
-copy:
+install:
 	sudo cp mini-matrix.sh /bin/mini-matrix
 	sudo chmod 755 /bin/mini-matrix
 
