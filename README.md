@@ -79,7 +79,7 @@ docker build -t mini-matrix .
 ### Run 🏃
 
 ```
-docker run -it mini-matrix
+docker run --rm -it mini-matrix
 
 bash-5.1# mini-matrix [OPTIONS]
 ```
