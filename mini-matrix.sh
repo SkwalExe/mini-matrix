@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Author : SkwalExe
 # Github : https://github.com/SkwalExe
 
