@@ -67,6 +67,23 @@ tail = true
 
 - ### [dotfiles](https://github.com/SkwalExe/dotfiles)
 
+# Docker 🐳
+
+### Build 🛠️
+
+```bash
+# 📂 mini-matrix/
+docker build -t mini-matrix .
+```
+
+### Run 🏃
+
+```
+docker run -it mini-matrix
+
+bash-5.1# mini-matrix [OPTIONS]
+```
+
 # final
 
 If you have any probleme, don't hesitate to open an issue
