@@ -2,6 +2,23 @@
 # Author : SkwalExe
 # Github : https://github.com/SkwalExe
 
+blue='\033[0;96m'
+red='\033[0;91m'
+green='\033[0;92m'
+yellow='\033[0;93m'
+purple='\033[0;95m'
+white='\033[0;97m'
+
+bg_blue='\033[0;44m'
+bg_red='\033[0;41m'
+bg_green='\033[0;42m'
+bg_yellow='\033[0;43m'
+bg_cyan='\033[0;46m'
+bg_white='\033[0;47m'
+bg_purple='\033[0;45m'
+
+reset='\033[0m'
+
 command="matrix" # the command to execute
 
 # settings
@@ -131,24 +148,27 @@ case $command in
         fi
     ;;
     help)
-        echo "Usage: mini-matrix [OPTION]"
-        echo ""
-        echo "Autor : SkwalExe [Léopold Ibghy Koprivnik]"
-        echo "Github : https://github.com/SkwalExe"
-        echo ""
-        echo "Displays a matrix of random characters"
-        echo ""
-        echo "Options:"
-        echo "  -h, --help    Show this help message and exit"
-        echo "  -v, --version Show version and exit"
-        echo "  -s, --speed   Set the delay between each line [default: 0.5]"
-        echo "  -l, --loop    Loop the output [default: false]"
-        echo "  -c, --chars   Set the number of characters to output [default: 10]"
-        echo "  -a, --custom-chars   Set the custom characters to use [default: \"01\"]"
+        printf "${bg_blue} Mini-matrix ${reset}\n"
+        printf "${blue}━━━━━━━━━━━━━━━━━${reset}\n"
+        printf "Author: ${green}@SkwalExe${reset}\n"
+        printf "Github: ${green}https://github.com/SkwalExe/daily-todo${reset}\n"
+        printf "${blue}━━━━━━━━━━━━━━━━━${reset}\n"
+        printf "Output random 0 and 1 or custom characters with a matrix-like effect\n"
+        printf "${blue}━━━━━━━━━━━━━━━━━${reset}\n"
+        printf "$ mini-matrix [Options]:\n"
+        printf "${green}  -h, --help${reset}    Show this help message and exit\n"
+        printf "${green}  -v, --version${reset} Show version and exit\n"
+        printf "${green}  -s, --speed${reset}   Set the delay between each line ${yellow}[default: 0.5]\n"
+        printf "${green}  -l, --loop${reset}    Loop the output ${yellow}[default: false]\n"
+        printf "${green}  -c, --chars${reset}   Set the number of characters to output ${yellow}[default: 10]\n"
+        printf "${green}  -a, --custom-chars${reset}   Set the custom characters to use ${yellow}[default: \"01\"]\n"
+        printf "${blue}━━━━━━━━━━━━━━━━━${reset}\n"
+       
+        
     ;;
     
     version)
-        echo "mini-matrix 0.2.0"
+        echo "${purple}mini-matrix 0.2.1${reset}"
     ;;
     
 esac
