@@ -1,4 +1,4 @@
-name: Bug Report
+name: ☢️ Bug Report
 description: File a bug report
 title: "[Bug]: "
 labels: ["bug"]
@@ -18,11 +18,43 @@ body:
     validations:
       required: false
   - type: textarea
-    id: what-happened
+    id: what-were-doing
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
+      label: What were you trying to do when the bug happened?
+      placeholder: ex. I was trying to do something
+      value: "I was trying to do something"
+    validations:
+      required: false
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: What was the expected behavior?
+      placeholder: ex. The program should have....
+      value: "The program should have continued to run normally"
+    validations:
+      required: false
+  - type: textarea
+    id: what-actually-happened
+    attributes:
+      label: What actually happened?
+      placeholder: Tell us what happened
       value: "A bug happened!"
     validations:
-      required: true
+      required: false
+  - type: textarea
+    id: how-to-reproduce
+    attributes:
+      label: How can we reproduce this?
+      placeholder: ex. step 1 - step 2...
+      value: "step 1 - step 2..."
+    validations:
+      required: false
+  - type: textarea
+    id: how-to-fix
+    attributes:
+      label: Possible solutions
+      description: Do you have an idea for how we could fix this?
+      placeholder: ex. Replace this line of code with...
+      value: "Replace this line of code with..."
+    validations:
+      required: false
