@@ -6,13 +6,13 @@
 
 # Installation
 
-## Arch
+## Arch 🐧
 
 ```bash
 yay -S mini-matrix
 ```
 
-## Debian based distros 
+## Debian based distros 🐧
 
 clone github repo
 
@@ -26,6 +26,12 @@ run make
 cd mini-matrix
 make
 ```
+
+# Windows 🪟
+
+Since this is a bash script, you normally can't run it directly on windows.
+
+You will have to install [Git Bash](https://git-scm.com/download/win) and follow the instructions for [Debian based distros](#debian-based-distros-).
 
 # Usage 
 
