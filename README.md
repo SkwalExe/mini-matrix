@@ -75,6 +75,14 @@ tail = true
 
 # Docker 🐳
 
+## Run the latest version
+
+```bash
+docker run --rm -it ghcr.io/skwalexe/mini-matrix:main
+```
+
+## Test your changes 🚧
+
 ### Build 🛠️
 
 ```bash
